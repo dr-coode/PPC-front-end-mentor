@@ -1,0 +1,118 @@
+* {
+  user-select: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  padding: 0px 20px 0px 20px;
+  max-width: 1170px;
+  margin: auto;
+}
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+body{
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 14px;
+}
+.product{
+  max-width: 570px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.phone{
+  display: none;
+}
+.desktop{
+  width: 285px;
+}
+.card{
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+.card > span{
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #868789;
+}
+h3{
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: 'Fraunces', serif;
+}
+.about{
+  line-height: 1.8;
+  color: hsl(228, 12%, 48%);
+}
+.price{
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: hsl(158, 36%, 37%) ;
+  font-family: 'Fraunces', serif;
+  position: relative;
+}
+.old-price{
+  position: absolute;
+  transform: translate(100%,-50%);
+  right: 50%;
+  top: 50%;
+  font-size: 14px;
+  font-family: initial;
+  color:#00000087;
+  font-family: "Montserrat";
+}
+a{
+  padding: 15px;
+  display: block;
+  color: white ;
+  background-color:hsl(158, 36%, 37%);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+a:hover{
+  background-color: #1a4031;
+}
+i{
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px !important;
+}
+@media (max-width: 575.98px) {
+  .product{
+    flex-direction: column;
+    justify-content: center;
+    max-width: 343px;
+  }
+  .phone{
+    display: block;
+  } 
+  .desktop{
+    display: none;
+  } 
+}
